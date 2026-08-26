@@ -13,7 +13,9 @@ h1 {
 
 p {
   font-family: verdana;
-  font-size: 20px;
+  font-size: 15px;
+  position: relative;
+  left: -500px
 }
 
 .contenido-principal {
@@ -21,8 +23,8 @@ p {
  
 }
 .mi-foto {
-    margin-top: 100px;   
-    margin-left: 200px;  
+    margin-top: 0px;   
+    margin-left: -500px;  
     border-radius: 10px; 
 }
 
@@ -33,5 +35,6 @@ footer {
 }
 
 header{ 
+  background-color: #e6d5b6;
   padding :20px
 }

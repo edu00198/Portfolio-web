@@ -4,37 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduardo De Turris</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="text-white p-4">
-    <div class="container d-flex justify-content-between align-items-center">
-        <h1 class="m-0">Mi Portfolio</h1>
+    <header class=" text-white p-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="m-0">Mi Portfolio</h1>
 
-        <nav>
-            <a href="#inicio" class="text-white text-decoration-none mx-2">Inicio</a>
-            <a href="#sobre-mi" class="text-white text-decoration-none mx-2">Sobre mí</a>
-            <a href="#proyectos" class="text-white text-decoration-none mx-2">Proyectos</a>
-            <a href="#contacto" class="text-white text-decoration-none mx-2">Contacto</a>
-        </nav>
-    </div>
-</header>
-    <main class="contenido-principal">
-        <img src="assets/image_1.jfif" width="400" height="500" class="mi-foto">
+            <nav>
+                <a href="#inicio" class="text-white text-decoration-none mx-2">Inicio</a>
+                <a href="#sobre-mi" class="text-white text-decoration-none mx-2">Sobre mí</a>
+                <a href="#proyectos" class="text-white text-decoration-none mx-2">Proyectos</a>
+                <a href="#contacto" class="text-white text-decoration-none mx-2">Contactame</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container text-center my-5" id="inicio">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <img src="assets/image_1.jfif" class="img-fluid rounded shadow mi-foto" alt="Foto de Messi">
+            </div>
+        </div>
+        <section id="Proyectos">
+            <h2>Proyectos</h2>
+            <p>Este es el contenido de mi segunda sección.</p>
+  </section>
+
     </main>
-    <footer class="text-black text-center p-3 mt-5">
-        <p class="mb-2">Mi Portfolio</p>
+    <footer class=" text-black text-center p-4 mt-5" id="contacto" >
+        <div class="container">
 
-        <div>
-            <a href="https://instagram.com/eduudeturris" class="mx-2">
-                <i class="fa-brands fa-instagram fa-beat"></i>
-            <a href="https://github.com/edu00198"  target="_blank" class="btn btn-dark" >GitHub</a>
-            <a href="https://ar.linkedin.com/"  target="_blank" class="btn btn-dark" >LinkedIn</a>
+            <h3 class="mb-3">Mi Contacto</h3>
+
+            <div class="d-flex justify-content-center gap-4 fs-2 mb-3">
+
+                <a href="https://instagram.com/eduudeturris" target="_blank" class="text-danger">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://github.com/edu00198" target="_blank" class="text-dark">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://ar.linkedin.com/" target="_blank" class="text-primary">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+            </div>
+
+            <p class="">© 2026 Eduardo De Turris</p>
+
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-</html>
+</html> 
