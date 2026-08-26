@@ -1,0 +1,37 @@
+body {
+  background-color: #ECE2D0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+.contenido-principal {
+  flex: 1;
+ 
+}
+.mi-foto {
+    margin-top: 100px;   
+    margin-left: 200px;  
+    border-radius: 10px; 
+}
+
+
+footer {
+    color: white;
+    padding: 20px;
+}
+
+header{ 
+  padding :20px
+}
