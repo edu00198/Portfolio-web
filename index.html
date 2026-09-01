@@ -7,6 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -24,8 +25,10 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-center" id="menu">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <!-- Links centrados -->
+                    <ul class="navbar-nav mx-auto">
 
                         <li class="nav-item">
                             <a class="nav-link" href="#sobre_mi">Sobre mí</a>
@@ -44,16 +47,117 @@
                         </li>
 
                     </ul>
+
+                    <!-- Botón a la derecha -->
+                    <button class="btn btn-dark btn-agenda"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalAgenda">
+                        Agendar reunión
+                    </button>
+
                 </div>
 
             </nav>
         </div>
     </header>
+    <!-- Modal de Contacto -->
+    <div class="modal fade" id="modalAgenda" tabindex="-1" aria-labelledby="modalAgendaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Encabezado -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAgendaLabel">
+                        Agendar una reunión
+                    </h5>
+
+                    <button type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Cerrar">
+                    </button>
+                </div>
+
+                <!-- Formulario -->
+                <div class="modal-body">
+
+                    <form>
+                        <div class="row mb-3">
+
+                            <div class="col-md-6">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text"
+                                    class="form-control"
+                                    id="nombre"
+                                    placeholder="Tu Nombre...">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text"
+                                    class="form-control"
+                                    id="apellido"
+                                    placeholder="Tu Apellido...">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email"
+                                class="form-control"
+                                id="email"
+                                placeholder="ejemplo@gmail.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control"
+                                    id="mensaje"
+                                    rows="4"
+                                    placeholder="Escribí tu consulta..."></textarea>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button"
+                            class="btn btn-outline-secondary"
+                            data-bs-dismiss="modal">
+                        Cancelar
+                    </button>
+
+                    <button type="submit" class="btn btn-dark">
+                        Enviar
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <main class="container">
-            <div class="foto">
-                <img src="assets/image_1.jfif" alt="Foto-Edu" class="mi-foto">
+        <section class="hero">
+
+            <div class="hero-texto">
+                <h1 class="nombre-principal">
+                    Eduardo <br>
+                    De Turris
+                </h1>
+
+                <p class="subtitulo">
+                    Desarrollador Web · Programador · Estudiante
+                </p>
             </div>
+
+            <div class="foto">
+                <img src="assets/mi_imagen.png" alt="Foto-Edu" class="mi-foto">
+            </div>
+
+        </section>
         <section id="sobre_mi">
             <div class="texto-sobre-mi">
                 <h2>Sobre mí</h2>
