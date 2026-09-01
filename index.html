@@ -56,7 +56,6 @@
                     </button>
 
                 </div>
-
             </nav>
         </div>
     </header>
@@ -237,7 +236,56 @@
         </div>
 
     </footer>
+    <div class="modal fade" id="modalAgenda" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
 
+                <div class="modal-header">
+                    <h5 class="modal-title">Agendar una reunión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                    <div class="row mb-3">
+
+                        <div class="col-md-6">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" class="form-control" placeholder="Tu nombre...">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Apellido</label>
+                            <input type="text" class="form-control" placeholder="Tu apellido...">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" placeholder="ejemplo@gmail.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">¿En qué puedo ayudarte?</label>
+                            <textarea class="form-control" rows="4"></textarea>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+
+                <!-- Botones -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cancelar
+                    </button>
+
+                    <button type="submit" class="btn btn-dark">
+                        Enviar
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
