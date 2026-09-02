@@ -1,10 +1,10 @@
 :root,
 [data-bs-theme="light"] {
-    --bg: #f7f6f2;
+    --bg: #f0f0e8;
     --text: #111111;
     --card: #f3f3f3;
 
-    --header: #f7f6f2;
+    --header: #f0f0e8;
     --navbar: #ffffff;
     --nav-text: #3B322C;
     --subtitulo: #555555;
@@ -47,12 +47,18 @@ body {
 
 h2, h3{
     font-weight: 700;
+    text-align: center;
 }
 h2 {
     text-align: center;
     margin-bottom: 20px;
 
 }
+
+.vsstudio {
+    image
+}
+
 .nombre-principal{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 7rem;
@@ -77,7 +83,7 @@ p {
 
 header {
     padding: 20px 0;
-    background-color: #f7f6f2;
+
 }
 
 .navbar-custom {
@@ -230,3 +236,57 @@ footer {
     display: block;
 }
 
+/* SKILLS */
+
+.skills {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.skills h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.skill-card {
+    width: 180px;
+    min-height: 160px;
+
+    background-color: var(--card);
+
+    border-radius: 15px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card i {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    margin: 5px 0;
+}
+
+.skill-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
