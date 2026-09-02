@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduardo De Turris</title>
-
+    <link rel="icon" type="image/png" href="assets/imagen_frente.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
     <div id="arriba"></div>
 
     <header>
@@ -63,7 +62,7 @@
             </nav>
         </div>
     </header>
-    <!-- Modal de Contacto -->
+    <!-- CONTACTO -->
     <div class="modal fade" id="modalAgenda" tabindex="-1" aria-labelledby="modalAgendaLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -81,7 +80,7 @@
                     </button>
                 </div>
 
-                <!-- Formulario -->
+                <!-- Formulario Completo -->
                 <div class="modal-body">
 
                     <form>
@@ -119,9 +118,7 @@
                                     rows="4"
                                     placeholder="Escribí tu consulta..."></textarea>
                         </div>
-
                     </form>
-
                 </div>
 
                 <div class="modal-footer">
@@ -137,14 +134,13 @@
                     </button>
 
                 </div>
-
             </div>
         </div>
     </div>
 
     <main class="container">
         <section class="hero">
-
+            <!--PARTE DEL INICIO-->
             <div class="hero-texto">
                 <h1 class="nombre-principal">
                     Eduardo <br>
@@ -152,7 +148,7 @@
                 </h1>
 
                 <p class="subtitulo izquierda">
-                    Estudiante de programación  
+                    ·Estudiante de programación  
                     <div class="redes">
                             <a href="https://instagram.com/eduudeturris" target="_blank">
                                 <i class="fa-brands fa-instagram"></i>
@@ -167,16 +163,17 @@
                             </a>
 
                     </div>
-                </p>
             </div>
-
+            <div>
+                <img src="assets/imagen_frente.png" class="mi-foto" alt="imagen principal">
+            </div>
         </section>
         <section id="sobre_mi">
             <div class="texto-sobre-mi">
                 <h2>SOBRE MI</h2>
 
                 <p>
-                    ¡Hola! Mi nombre es **Eduardo De Turris**. Soy estudiante y estoy formándome en el área de programación y desarrollo de software. Me interesa especialmente el desarrollo web y la creación de aplicaciones, y disfruto aprender nuevas tecnologías y llevar mis conocimientos a proyectos propios.
+                    ¡Hola! Mi nombre es Eduardo De Turris**. Soy estudiante y estoy formándome en el área de programación y desarrollo de software. Me interesa especialmente el desarrollo web y la creación de aplicaciones, y disfruto aprender nuevas tecnologías y llevar mis conocimientos a proyectos propios.
 
                     Comencé a interesarme cada vez más por la programación a medida que fui desarrollando diferentes proyectos, trabajando tanto en el diseño de interfaces como en la lógica y el funcionamiento de las aplicaciones. Actualmente tengo conocimientos en **HTML, CSS, Bootstrap, Python y SQL**, y continúo aprendiendo y mejorando mis habilidades.
 
@@ -191,7 +188,7 @@
 
         <section id="skills">
             <h2>SKILLS</h2>
-
+            <!-- AGREGADO DE CARDS-->
             <div class="skills-container">
                 <div class="skill-card">
                     <i class="fa-brands fa-python"></i>
@@ -212,14 +209,14 @@
                 </div>
 
                 <div class="skill-card">
-                    <img src="assets/MySQL.png" width="85" class="vsstudio">
+                    <img src="assets/MySQL.png" width="85" alt="Icono My SQL">
                     <h3>My SQL </h3> 
                     <p>Editor</p> 
                 </div>
 
                 <div class="skill-card">
-                    <img src="assets/photopea.webp" width="50" class="vsstudio">
-                    <h3>Visual Studio </h3> 
+                    <img src="assets/photopea.webp" width="50" class="vsstudio" alt="Icono Photopea">
+                    <h3>Photoshop </h3> 
                     <p>Editor</p> 
                 </div>
 
@@ -227,61 +224,142 @@
 
         </section>
 
+
         <section id="proyectos">
 
             <h2>PROYECTOS</h2>
+
             <div class="proyectos-grid">
 
-            <div id="carouselExampleIndicators" class="carousel slide">
+                <div id="carouselExampleIndicators" class="carousel slide">
 
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide-to="0" class="active"></button>
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
 
-                    <button type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide-to="1"></button>
+                        <button type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="0"
+                                class="active">
+                        </button>
 
-                    <button type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide-to="2"></button>
-                </div>
+                        <button type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="1">
+                        </button>
 
-                <div class="carousel-inner">
+                        <button type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="2">
+                        </button>
+                    </div>
 
-                    <div class="carousel-item active">
-                        <img src="assets/mi_imagen.png" class="d-block w-100" alt="Imagen 1">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>SIX SEVEN</h5>
-                                <p>OK sjadask</p>
+                    <!-- Proyectos -->
+                    <div class="carousel-inner">
+
+                        <!-- Proyecto 1 -->
+                        <div class="carousel-item">
+
+                            <img src="assets/escape.png"
+                                class="d-block w-100"
+                                alt="Escape de la Mazmorra">
+
+                            <div class="proyecto-info">
+
+                                <h3>Escape de la Mazmorra</h3>
+
+                                <p>
+                                    Videojuego desarrollado en Python utilizando Pygame.
+                                </p>
+
+                                <a href="https://github.com/edu00198/Juego-escape"
+                                target="_blank"
+                                class="btn-github">
+                                    <i class="fa-brands fa-github"></i>
+                                    Ver en GitHub
+                                </a>
+
                             </div>
+
+                        </div>
+
+                        <!-- Proyecto 2 -->
+                        <div class="carousel-item">
+
+                            <img src="assets/reproductor.jpg"
+                                class="d-block w-100"
+                                alt="Reproductor de música">
+
+                            <div class="proyecto-info">
+
+                                <h3>Alonso Music</h3>
+
+                                <p>
+                                    Aplicación de escritorio desarrollada con Python, utilizando Tkinter.
+                                </p>
+
+                                <a href="https://github.com/edu00198/TP-Reproducto-musica"
+                                target="_blank"
+                                class="btn-github">
+                                    <i class="fa-brands fa-github"></i>
+                                    Ver en GitHub
+                                </a>
+
+                            </div>
+
+                        </div>
+                        <!-- Proyecto 3 -->
+                        <div class="carousel-item active">
+                            <img src="assets/mi_imagen.png"
+                                class="d-block w-100"
+                                alt="Proyecto web">
+
+                            <div class="proyecto-info">
+
+                                <h3>Pokedex</h3>
+
+                                <p>
+                                    Portfolio personal desarrollado con HTML, CSS y Bootstrap.
+                                </p>
+
+                                <a href="https://github.com/edu00198/TP-2"
+                                target="_blank"
+                                class="btn-github">
+                                    <i class="fa-brands fa-github"></i>
+                                    Ver en GitHub
+                                </a>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div class="carousel-item">
-                        <img src="assets/reproductor.jpg" class="d-block w-100" alt="Imagen 2">
-                    </div>
 
-                    <div class="carousel-item">
-                        <img src="assets/escape.png" class="d-block w-100" alt="Imagen 3">
-                    </div>
+                    <!-- Flecha izquierda -->
+                    <button class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+
+                        <span class="carousel-control-prev-icon"></span>
+
+                    </button>
+
+
+                    <!-- Flecha derecha -->
+                    <button class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+
+                        <span class="carousel-control-next-icon"></span>
+
+                    </button>
 
                 </div>
-
-                <!-- Flecha izquierda -->
-                <button class="carousel-control-prev" type="button"
-                        data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-
-                <!-- Flecha derecha -->
-                <button class="carousel-control-next" type="button"
-                        data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-
-                    <span class="carousel-control-next-icon"></span>
-                </button>
 
             </div>
+
         </section>
 
     </main>
@@ -292,9 +370,7 @@
 
             <h3>Mi Contacto</h3>
 
-
-
-            <p>© 2026 De Turris . All rights reserved.</p>
+            <p class="full_izq">© 2026 De Turris, All rights reserved .</p>
 
             <a href="#arriba" class="boton-arriba">
                 <i class="fa-solid fa-circle-up"></i>
@@ -303,56 +379,6 @@
         </div>
     
     </footer>
-    <div class="modal fade" id="modalAgenda" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <h5 class="modal-title">Agendar una reunión</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <div class="modal-body">
-                    <form>
-                    <div class="row mb-3">
-
-                        <div class="col-md-6">
-                            <label class="form-label">Nombre</label>
-                            <input type="text" class="form-control" placeholder="Tu nombre...">
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label">Apellido</label>
-                            <input type="text" class="form-control" placeholder="Tu apellido...">
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" placeholder="ejemplo@gmail.com">
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">¿En qué puedo ayudarte?</label>
-                            <textarea class="form-control" rows="4"></textarea>
-                        </div>
-                    </form>
-                    </div>
-                </div>
-
-                <!-- Botones -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Cancelar
-                    </button>
-
-                    <button type="submit" class="btn btn-dark">
-                        Enviar
-                    </button>
-                </div>
-
-            </div>
-        </div>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         const boton = document.getElementById("theme-toggle");
