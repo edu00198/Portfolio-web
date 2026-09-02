@@ -1,10 +1,39 @@
-body {
-    background-color: #f7f6f2;
-    margin: 0;
-    font-family: "Inter", sans-serif;
-    color: #212529;
+:root,
+[data-bs-theme="light"] {
+    --bg: #f7f6f2;
+    --text: #111111;
+    --card: #f3f3f3;
+
+    --header: #f7f6f2;
+    --navbar: #ffffff;
+    --nav-text: #3B322C;
+    --subtitulo: #555555;
+    --borde: #212529;
+    --iconos: #212529;
 }
 
+[data-bs-theme="dark"] {
+    --bg: #111111;
+    --text: #ffffff;
+    --card: #1b1b1b;
+
+    --header: #111111;
+    --navbar: #1d1d1d;
+    --nav-text: #ffffff;
+    --subtitulo: #cfcfcf;
+    --borde: #444444;
+    --iconos: #ffffff;
+}
+
+body {
+    background-color: var(--bg);
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: var(--text);
+}
+.card{
+    background: var(--card);
+}
 
 /* FUENTE-TEXTO */
 
@@ -35,8 +64,14 @@ h2 {
 p {
     font-size: 16px;
     line-height: 1.6;
-    text-align: left;
+    text-align: center;
 }
+
+.izquierda {
+    text-align: left;
+    padding-left: 80px;
+}
+
 
 /* HEADER */
 
@@ -89,11 +124,6 @@ section + section {
     margin: auto;
 }
 
-.descripcion {
-    margin-bottom: 40px;
-    text-align: center;
-}
-
 /* PROYECTOS */
 
 .proyectos-grid {
@@ -124,9 +154,10 @@ footer {
 
 .redes {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    font-size: 32px;
+    justify-content: left;
+    gap: 20px;
+    padding-left: 150px;
+    font-size: 20px;
     margin: 20px 0;
 }
 
@@ -145,6 +176,18 @@ footer {
     bottom: 20px;
     color: #212529;
     font-size: 35px;
+}
+
+.carousel {
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 520px;
+    object-fit: cover;
 }
 
 /* HERO */

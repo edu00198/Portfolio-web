@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +24,9 @@
                         data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                    <button id="theme-toggle" class="btn btn-outline-secondary">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
 
                 <div class="collapse navbar-collapse" id="menu">
 
@@ -35,7 +38,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                            <a class="nav-link" href="#skills">Skills</a>
                         </li>
 
                         <li class="nav-item">
@@ -55,6 +58,7 @@
                         Agendar reunión
                     </button>
 
+
                 </div>
             </nav>
         </div>
@@ -67,7 +71,7 @@
                 <!-- Encabezado -->
                 <div class="modal-header">
                     <h5 class="modal-title" id="modalAgendaLabel">
-                        Agendar una reunión
+                        Agendar una reunion
                     </h5>
 
                     <button type="button"
@@ -147,31 +151,46 @@
                     De Turris
                 </h1>
 
-                <p class="subtitulo">
-                    Desarrollador Web · Programador · Estudiante
-                </p>
-            </div>
+                <p class="subtitulo izquierda">
+                    Estudiante de programación  
+                    <div class="redes">
+                            <a href="https://instagram.com/eduudeturris" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
 
-            <div class="foto">
-                <img src="assets/mi_imagen.png" alt="Foto-Edu" class="mi-foto">
+                            <a href="https://github.com/edu00198" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                            <a href="https://ar.linkedin.com/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+
+                    </div>
+                </p>
             </div>
 
         </section>
         <section id="sobre_mi">
             <div class="texto-sobre-mi">
-                <h2>Sobre mí</h2>
+                <h2>SOBRE MI</h2>
 
                 <p>
-                    Soy Eduardo De Turris y me encuentro aprendiendo programación y
-                    desarrollo web. Me gusta crear proyectos que me permitan mejorar
-                    mis conocimientos y seguir aprendiendo nuevas tecnologías.
+                    ¡Hola! Mi nombre es **Eduardo De Turris**. Soy estudiante y estoy formándome en el área de programación y desarrollo de software. Me interesa especialmente el desarrollo web y la creación de aplicaciones, y disfruto aprender nuevas tecnologías y llevar mis conocimientos a proyectos propios.
+
+                    Comencé a interesarme cada vez más por la programación a medida que fui desarrollando diferentes proyectos, trabajando tanto en el diseño de interfaces como en la lógica y el funcionamiento de las aplicaciones. Actualmente tengo conocimientos en **HTML, CSS, Bootstrap, Python y SQL**, y continúo aprendiendo y mejorando mis habilidades.
+
+                    Me gusta enfrentarme a nuevos desafíos, resolver problemas y experimentar con distintas herramientas para encontrar mejores formas de desarrollar mis proyectos. Mi objetivo es seguir creciendo como programador, adquirir experiencia y convertir cada proyecto en una oportunidad para aprender algo nuevo.
+
+                    En este portfolio podés conocer algunos de los proyectos en los que estuve trabajando y las tecnologías que fui aprendiendo a lo largo de mi formación.
+
                 </p>
             </div>
 
         </section>
 
-        <section id="habilidades">
-            <h2>Habilidades</h2>
+        <section id="skills">
+            <h2>SKILLS</h2>
 
             <p>
                 Estas son algunas de las tecnologías y herramientas con las que trabajo.
@@ -182,25 +201,59 @@
 
         <section id="proyectos">
 
-            <h2>Proyectos</h2>
-
-            <p class="descripcion">
-                Encontrarás algunos de mis proyectos más destacados, donde muestro las
-                tecnologías y conocimientos que fui adquiriendo a lo largo de mi aprendizaje.
-            </p>
-
+            <h2>MIS PROYECTOS</h2>
             <div class="proyectos-grid">
 
-                <div class="proyecto">
-                    FOTO
+            <div id="carouselExampleIndicators" class="carousel slide">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="0" class="active"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="1"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="2"></button>
                 </div>
 
-                <div class="proyecto">
-                     <img src="assets/image_F.jfif" alt="Imagen" class="img-fluid imagen-proyecto">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="assets/mi_imagen.png" class="d-block w-100" alt="Imagen 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>SIX SEVEN</h5>
+                                <p>OK sjadask</p>
+                            </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/reproductor.jpg" class="d-block w-100" alt="Imagen 2">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/escape.png" class="d-block w-100" alt="Imagen 3">
+                    </div>
+
                 </div>
+
+                <!-- Flecha izquierda -->
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <!-- Flecha derecha -->
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon"></span>
+                </button>
 
             </div>
-
         </section>
 
     </main>
@@ -211,21 +264,7 @@
 
             <h3>Mi Contacto</h3>
 
-            <div class="redes">
 
-                <a href="https://instagram.com/eduudeturris" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="https://github.com/edu00198" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-
-                <a href="https://ar.linkedin.com/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-
-            </div>
 
             <p>© 2026 De Turris . All rights reserved.</p>
 
@@ -234,7 +273,7 @@
             </a>
 
         </div>
-
+    
     </footer>
     <div class="modal fade" id="modalAgenda" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
@@ -287,5 +326,21 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const boton = document.getElementById("theme-toggle");
+        const html = document.documentElement;
+
+        boton.addEventListener("click", () => {
+            const temaActual = html.getAttribute("data-bs-theme");
+
+            if (temaActual === "dark") {
+                html.setAttribute("data-bs-theme", "light");
+                boton.innerHTML = '<i class="fa-solid fa-moon"></i>';
+            } else {
+                html.setAttribute("data-bs-theme", "dark");
+                boton.innerHTML = '<i class="fa-solid fa-sun"></i>';
+            }
+        });
+    </script>
 </body>
 </html>
