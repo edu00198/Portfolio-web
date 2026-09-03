@@ -62,9 +62,10 @@
             </nav>
         </div>
     </header>
+
     <!-- CONTACTO -->
-    <div class="modal fade" id="modalAgenda" tabindex="-1" aria-labelledby="modalAgendaLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+    <div class="modal fade" id="modalAgenda" tabindex="-1" role="dialog" aria-labelledby="modalAgendaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
 
                 <!-- Encabezado -->
@@ -81,17 +82,17 @@
                 </div>
 
                 <!-- Formulario Completo -->
-                <div class="modal-body">
+                <form id="formAgenda"> 
+                    <div class="modal-body">
 
-                    <form>
                         <div class="row mb-3">
 
                             <div class="col-md-6">
                                 <label for="nombre" class="form-label">Nombre</label>
                                 <input type="text"
-                                    class="form-control"
-                                    id="nombre"
-                                    placeholder="Tu Nombre...">
+                                        class="form-control"
+                                        id="nombre"
+                                        placeholder="Tu Nombre...">
                             </div>
 
                             <div class="col-md-6">
@@ -118,8 +119,8 @@
                                     rows="4"
                                     placeholder="Escribí tu consulta..."></textarea>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
 
                 <div class="modal-footer">
 
@@ -169,19 +170,20 @@
             </div>
         </section>
         <section id="sobre_mi">
-            <div class="texto-sobre-mi">
+            <div >
                 <h2>SOBRE MI</h2>
 
-                <p>
-                    ¡Hola! Mi nombre es Eduardo De Turris**. Soy estudiante y estoy formándome en el área de programación y desarrollo de software. Me interesa especialmente el desarrollo web y la creación de aplicaciones, y disfruto aprender nuevas tecnologías y llevar mis conocimientos a proyectos propios.
-
-                    Comencé a interesarme cada vez más por la programación a medida que fui desarrollando diferentes proyectos, trabajando tanto en el diseño de interfaces como en la lógica y el funcionamiento de las aplicaciones. Actualmente tengo conocimientos en **HTML, CSS, Bootstrap, Python y SQL**, y continúo aprendiendo y mejorando mis habilidades.
-
-                    Me gusta enfrentarme a nuevos desafíos, resolver problemas y experimentar con distintas herramientas para encontrar mejores formas de desarrollar mis proyectos. Mi objetivo es seguir creciendo como programador, adquirir experiencia y convertir cada proyecto en una oportunidad para aprender algo nuevo.
-
-                    En este portfolio podés conocer algunos de los proyectos en los que estuve trabajando y las tecnologías que fui aprendiendo a lo largo de mi formación.
-
+                <p style="text-align: justify;" class="texto-sobre-mi">
+                    Soy Eduardo De Turris, estudiante de programación y desarrollador en formación, interesado principalmente en el desarrollo web y la creación de aplicaciones.
+                    Durante mi formación fui aprendiendo distintas tecnologías y aplicándolas en proyectos propios. Actualmente tengo conocimientos en HTML, CSS, Bootstrap, Python y SQL, y continúo incorporando nuevas herramientas y conceptos mientras sigo aprendiendo.
+                    Me interesa entender cómo funcionan las cosas, resolver problemas y aprender a través de cada proyecto que realizo. Mi objetivo es seguir desarrollando mis conocimientos y mejorar poco a poco como programador.
                 </p>
+                <a href="assets/CV_Eduardo_De_Turris.pdf"
+                target="_blank"
+                class="btn-pdf">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    Ver CV
+                </a>
             </div>
 
         </section>
@@ -209,15 +211,15 @@
                 </div>
 
                 <div class="skill-card">
-                    <img src="assets/MySQL.png" width="85" alt="Icono My SQL">
+                    <img src="assets/MySQL.png" width="85" alt="Icono My SQL" class="icono-tema">
                     <h3>My SQL </h3> 
-                    <p>Editor</p> 
+                    <p>Gestion de datos</p> 
                 </div>
 
                 <div class="skill-card">
-                    <img src="assets/photopea.webp" width="50" class="vsstudio" alt="Icono Photopea">
-                    <h3>Photoshop </h3> 
-                    <p>Editor</p> 
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h3>Bootstrap </h3> 
+                    <p>Diseño responsivo</p> 
                 </div>
 
             </div>
@@ -225,142 +227,135 @@
         </section>
 
 
-        <section id="proyectos">
+        <h2>PROYECTOS</h2>
 
-            <h2>PROYECTOS</h2>
+        <div class="proyectos-grid">
 
-            <div class="proyectos-grid">
+            <div id="carouselExampleIndicators" class="carousel slide">
 
-                <div id="carouselExampleIndicators" class="carousel slide">
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
 
-                    <!-- Indicadores -->
-                    <div class="carousel-indicators">
-
-                        <button type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="0"
-                                class="active">
-                        </button>
-
-                        <button type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="1">
-                        </button>
-
-                        <button type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="2">
-                        </button>
-                    </div>
-
-                    <!-- Proyectos -->
-                    <div class="carousel-inner">
-
-                        <!-- Proyecto 1 -->
-                        <div class="carousel-item">
-
-                            <img src="assets/escape.png"
-                                class="d-block w-100"
-                                alt="Escape de la Mazmorra">
-
-                            <div class="proyecto-info">
-
-                                <h3>Escape de la Mazmorra</h3>
-
-                                <p>
-                                    Videojuego desarrollado en Python utilizando Pygame.
-                                </p>
-
-                                <a href="https://github.com/edu00198/Juego-escape"
-                                target="_blank"
-                                class="btn-github">
-                                    <i class="fa-brands fa-github"></i>
-                                    Ver en GitHub
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                        <!-- Proyecto 2 -->
-                        <div class="carousel-item">
-
-                            <img src="assets/reproductor.jpg"
-                                class="d-block w-100"
-                                alt="Reproductor de música">
-
-                            <div class="proyecto-info">
-
-                                <h3>Alonso Music</h3>
-
-                                <p>
-                                    Aplicación de escritorio desarrollada con Python, utilizando Tkinter.
-                                </p>
-
-                                <a href="https://github.com/edu00198/TP-Reproducto-musica"
-                                target="_blank"
-                                class="btn-github">
-                                    <i class="fa-brands fa-github"></i>
-                                    Ver en GitHub
-                                </a>
-
-                            </div>
-
-                        </div>
-                        <!-- Proyecto 3 -->
-                        <div class="carousel-item active">
-                            <img src="assets/mi_imagen.png"
-                                class="d-block w-100"
-                                alt="Proyecto web">
-
-                            <div class="proyecto-info">
-
-                                <h3>Pokedex</h3>
-
-                                <p>
-                                    Portfolio personal desarrollado con HTML, CSS y Bootstrap.
-                                </p>
-
-                                <a href="https://github.com/edu00198/TP-2"
-                                target="_blank"
-                                class="btn-github">
-                                    <i class="fa-brands fa-github"></i>
-                                    Ver en GitHub
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Flecha izquierda -->
-                    <button class="carousel-control-prev"
-                            type="button"
+                    <button type="button"
                             data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev">
-
-                        <span class="carousel-control-prev-icon"></span>
-
+                            data-bs-slide-to="0"
+                            class="active">
                     </button>
 
-
-                    <!-- Flecha derecha -->
-                    <button class="carousel-control-next"
-                            type="button"
+                    <button type="button"
                             data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="next">
+                            data-bs-slide-to="1">
+                    </button>
 
-                        <span class="carousel-control-next-icon"></span>
-
+                    <button type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="2">
                     </button>
 
                 </div>
 
-            </div>
+                <!-- Proyectos -->
+                <div class="carousel-inner">
 
-        </section>
+                    <!-- Proyecto 1 -->
+                    <div class="carousel-item active">
+
+                        <img src="assets/escape.png"
+                            class="d-block w-100"
+                            alt="Escape de la Mazmorra">
+
+                        <div class="proyecto-info">
+
+                            <h3>Escape de la Mazmorra</h3>
+
+                            <p class="medio">
+                                Videojuego desarrollado en Python utilizando Pygame.
+                            </p>
+
+                            <a href="https://github.com/edu00198/Juego-escape"
+                            target="_blank"
+                            class="btn-github">
+                                <i class="fa-brands fa-github"></i>
+                                Ver en GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2 -->
+                    <div class="carousel-item">
+
+                        <img src="assets/reproductor.jpg"
+                            class="d-block w-100"
+                            alt="Reproductor de música">
+
+                        <div class="proyecto-info">
+
+                            <h3>Alonso Music</h3>
+
+                            <p class="medio">
+                                Aplicación de escritorio desarrollada con Python,
+                                utilizando Tkinter.
+                            </p>
+
+                            <a href="https://github.com/edu00198/TP-Reproducto-musica"
+                            target="_blank"
+                            class="btn-github">
+                                <i class="fa-brands fa-github"></i>
+                                Ver en GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <div class="carousel-item">
+
+                        <img src="assets/pokemon.png"
+                            class="d-block w-100"
+                            alt="Pokedex">
+
+                        <div class="proyecto-info">
+                            <h3>Pokedex</h3>
+                            <p class="medio">
+                                Proyecto desarrollado en Python utilizando
+                                estructuras de datos 
+                            </p >
+
+                            <a href="https://github.com/edu00198/TP-2"
+                            target="_blank"
+                            class="btn-github">
+                                <i class="fa-brands fa-github"></i>
+                                Ver en GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Flecha izquierda -->
+                <button class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+
+                </button>
+
+                <!-- Flecha derecha -->
+                <button class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon"></span>
+
+                </button>
+
+            </div>
+            <h4 class="gracias"> GRACIAS POR VER!</h4>
+        </div>
 
     </main>
 
@@ -368,15 +363,28 @@
 
         <div class="container">
 
-            <h3>Mi Contacto</h3>
+            <div class="redes_der">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
 
+                <a href="https://github.com/edu00198" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://ar.linkedin.com/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+            </div>
             <p class="full_izq">© 2026 De Turris, All rights reserved .</p>
 
             <a href="#arriba" class="boton-arriba">
                 <i class="fa-solid fa-circle-up"></i>
             </a>
-
+        
         </div>
+
     
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
